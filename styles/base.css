@@ -1,0 +1,41 @@
+body {
+    background-color: rgb(255, 255, 255);
+}
+header{
+    background-color: rgb(7, 7, 75);
+    text-align: center;
+    border-width: 0;
+    color: rgb(255, 255, 255);
+
+}
+nav{
+    background-color: rgb(13, 1, 1);
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+nav ul li{
+    float: left;
+}
+nav ul li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+h1{
+    color: rgb(7, 7, 75);
+    text-align: center;
+}
+h2{
+    color: rgb(7, 7, 75);
+    text-align: center;
+}
+
