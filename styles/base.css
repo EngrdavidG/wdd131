@@ -5,7 +5,7 @@ box-sizing:border-box;
 }
 
 body{
-font-family:Arial, Helvetica, sans-serif;
+font-family:'Roboto', sans-serif;
 background:#f4f4f4;
 }
 
@@ -18,16 +18,23 @@ text-align:center;
 padding:20px;
 }
 
-/* NAVIGATION */
+#course-title{
+font-size:1.5rem;
+font-weight:bold;
+display:block;
+margin-bottom:10px;
+}
+
+/* NAV */
 
 nav{
 background:#333;
 }
 
 nav ul{
-list-style:none;
 display:flex;
 justify-content:space-around;
+list-style:none;
 padding:10px;
 }
 
@@ -38,7 +45,7 @@ font-weight:bold;
 }
 
 nav a:hover{
-text-decoration:none;
+text-decoration:underline;
 }
 
 /* MAIN */
@@ -49,13 +56,13 @@ margin:auto;
 padding:20px;
 }
 
-h2{
+h1{
 text-align:center;
 margin-bottom:20px;
 color:#2b5c85;
 }
 
-/* CARD LAYOUT */
+/* GRID LAYOUT */
 
 .cards{
 display:grid;
@@ -66,15 +73,8 @@ gap:20px;
 .card{
 background:white;
 border:1px solid #ccc;
-border-radius:6px;
 padding:20px;
-}
-
-.card h3{
-background:#2b5c85;
-color:white;
-padding:10px;
-margin:-20px -20px 20px -20px;
+border-radius:6px;
 }
 
 /* ABOUT SECTION */
@@ -82,12 +82,11 @@ margin:-20px -20px 20px -20px;
 .about-content{
 display:flex;
 gap:20px;
-align-items:flex-start;
 }
 
 .about-content img{
 width:120px;
-border-radius:5px;
+border-radius:6px;
 }
 
 /* LOCATION */
@@ -104,16 +103,6 @@ width:100px;
 border:1px solid #ccc;
 }
 
-/* RESOURCE LIST */
-
-.resources{
-margin-left:20px;
-}
-
-.resources li{
-margin:10px 0;
-}
-
 /* FOOTER */
 
 footer{
@@ -121,5 +110,5 @@ background:#2b5c85;
 color:white;
 text-align:center;
 padding:15px;
-margin-top:30px;
+margin-top:20px;
 }
