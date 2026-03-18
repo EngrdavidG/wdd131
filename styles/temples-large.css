@@ -1,12 +1,17 @@
 @media (min-width: 768px) {
 
+    /* ✅ ADD THIS */
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+
     #menu {
         display: none;
     }
 
     .navigation {
         display: flex;
-        justify-content: center;
         gap: 2rem;
     }
 
