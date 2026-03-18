@@ -1,20 +1,16 @@
 @media (min-width: 768px) {
 
-    #menu {
-        display: none;
+    nav {
+        display: flex;
+        justify-content: center;
     }
 
     .navigation {
         display: flex;
-        justify-content: center;
         gap: 2rem;
     }
 
-    .navigation a:hover {
-        text-decoration: underline;
-    }
-
-    .gallery {
-        grid-template-columns: repeat(3, 1fr);
+    #menu {
+        display: none;
     }
 }
