@@ -57,3 +57,34 @@ const temples = [
   },
   // Add more temple objects here...
 ];
+const gallery = document.querySelector("#gallery");
+
+// FUNCTION TO DISPLAY TEMPLES
+function displayTemples(templeList) {
+  gallery.innerHTML = "";
+
+  templeList.forEach(temple => {
+    const figure = document.createElement("figure");
+
+    const img = document.createElement("img");
+    img.src = temple.imageUrl;
+    img.alt = temple.templeName;
+    img.loading = "lazy";
+
+    const caption = document.createElement("figcaption");
+    caption.innerHTML = `
+      <h3>${temple.templeName}</h3>
+      <p>${temple.location}</p>
+      <p>Dedicated: ${temple.dedicated}</p>
+      <p>Area: ${temple.area} sq ft</p>
+    `;
+
+    figure.appendChild(img);
+    figure.appendChild(caption);
+
+    gallery.appendChild(figure);
+  });
+}
+
+// CALL FUNCTION (VERY IMPORTANT)
+displayTemples(temples);
