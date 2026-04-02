@@ -1,0 +1,24 @@
+@media (min-width: 768px) {
+
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .navigation a:hover {
+        text-decoration: underline;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

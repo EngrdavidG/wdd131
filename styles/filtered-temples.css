@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+/* HEADER */
+header {
+    background: purple;
+    color: white;
+    padding: 1rem;
+}
+
+header h2 {
+    margin-bottom: 0.5rem;
+}
+
+/* NAV */
+nav {
+    display: flex;
+    justify-content: center;
+}
+#menu {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.navigation {
+    display: none;
+    list-style: none;
+}
+
+.navigation li {
+    padding: 0.5rem;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+}
+
+/* SHOW MENU */
+.open {
+    display: block;
+}
+
+/* MAIN */
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 1rem;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+figure img {
+    width: 100%;
+}
+
+/* FOOTER */
+footer {
+    background: purple;
+    color: white;
+    padding: 1rem;
+    margin-top: 1rem;
+}
