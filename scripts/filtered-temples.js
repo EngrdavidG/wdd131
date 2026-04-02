@@ -88,3 +88,43 @@ function displayTemples(templeList) {
 
 // CALL FUNCTION (VERY IMPORTANT)
 displayTemples(temples);
+const title = document.querySelector("h1");
+
+// HOME
+document.querySelector("#home").addEventListener("click", (e) => {
+  e.preventDefault();
+  title.textContent = "Home";
+  displayTemples(temples);
+});
+
+// OLD
+document.querySelector("#old").addEventListener("click", (e) => {
+  e.preventDefault();
+  title.textContent = "Old Temples";
+  const oldTemples = temples.filter(t => new Date(t.dedicated).getFullYear() < 1900);
+  displayTemples(oldTemples);
+});
+
+// NEW
+document.querySelector("#new").addEventListener("click", (e) => {
+  e.preventDefault();
+  title.textContent = "New Temples";
+  const newTemples = temples.filter(t => new Date(t.dedicated).getFullYear() > 2000);
+  displayTemples(newTemples);
+});
+
+// LARGE
+document.querySelector("#large").addEventListener("click", (e) => {
+  e.preventDefault();
+  title.textContent = "Large Temples";
+  const largeTemples = temples.filter(t => t.area > 90000);
+  displayTemples(largeTemples);
+});
+
+// SMALL
+document.querySelector("#small").addEventListener("click", (e) => {
+  e.preventDefault();
+  title.textContent = "Small Temples";
+  const smallTemples = temples.filter(t => t.area < 10000);
+  displayTemples(smallTemples);
+});
