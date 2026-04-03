@@ -1,0 +1,81 @@
+:root {
+    --primary: #5a0142;
+    --light: #f3f3f3;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #fff;
+}
+
+/* HEADER */
+header {
+    background: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* FORM CARD */
+main {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+form {
+    background: var(--light);
+    padding: 1.5rem;
+    width: 320px;
+    border-radius: 5px;
+}
+
+/* INPUTS */
+label {
+    display: block;
+    margin-top: 1rem;
+    text-align: left;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+}
+
+textarea {
+    height: 80px;
+}
+
+/* FIELDSETS */
+fieldset {
+    margin-top: 1rem;
+    border: none;
+    text-align: left;
+}
+
+legend {
+    font-weight: bold;
+}
+
+/* BUTTON */
+input[type="submit"] {
+    margin-top: 1rem;
+    background: #ddd;
+    border: none;
+    padding: 0.7rem;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background: #ccc;
+}
+
+/* FOOTER */
+footer {
+    background: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
