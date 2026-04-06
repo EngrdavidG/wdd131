@@ -1,0 +1,68 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+header {
+  background: purple;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* ADD THIS (hover effect requirement) */
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 1rem;
+  text-align: center;
+}
+
+/* FIX YOUR IMAGE ISSUE HERE */
+.hero img {
+  width: 100%;
+  max-height: 400px;   /* ✅ prevents it from being too big */
+  object-fit: cover;   /* ✅ keeps it looking clean */
+}
+
+/* ADD THIS (VERY IMPORTANT global fix) */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+footer {
+  background: purple;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
