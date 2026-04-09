@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Product Review</title>
 
-    <meta name="description" content="Product review form page">
+    <!-- Improved Meta Description -->
+    <meta name="description" content="Submit your feedback through this product review form by rating features, sharing installation details, and writing your experience to help others make informed decisions.">
     <meta name="author" content="David Onochie Izuogu">
 
     <link rel="stylesheet" href="styles/form.css">
@@ -14,9 +14,9 @@
 </head>
 
 <body>
-
 <header>
     <h1>Product Review</h1>
+    <p>We value your feedback! Please share your experience with our products.</p>
 </header>
 
 <main>
@@ -32,11 +32,21 @@
         <fieldset>
             <legend>Overall Rating</legend>
 
-            <label><input type="radio" name="rating" value="1" required> ☆</label>
-            <label><input type="radio" name="rating" value="2"> ☆☆</label>
-            <label><input type="radio" name="rating" value="3"> ☆☆☆</label>
-            <label><input type="radio" name="rating" value="4"> ☆☆☆☆</label>
-            <label><input type="radio" name="rating" value="5"> ☆☆☆☆☆</label>
+            <label for="rating1">
+                <input type="radio" id="rating1" name="rating" value="1" required> ☆
+            </label>
+            <label for="rating2">
+                <input type="radio" id="rating2" name="rating" value="2" required> ☆☆
+            </label>
+            <label for="rating3">
+                <input type="radio" id="rating3" name="rating" value="3" required> ☆☆☆
+            </label>
+            <label for="rating4">
+                <input type="radio" id="rating4" name="rating" value="4" required> ☆☆☆☆
+            </label>
+            <label for="rating5">
+                <input type="radio" id="rating5" name="rating" value="5" required> ☆☆☆☆☆
+            </label>
         </fieldset>
 
         <!-- DATE -->
@@ -47,23 +57,30 @@
         <fieldset>
             <legend>Which features did you find useful? (Check all that apply)</legend>
 
-            <label><input type="checkbox" name="features" value="Durability"> Durability</label>
-            <label><input type="checkbox" name="features" value="Ease of Use"> Ease of Use</label>
-            <label><input type="checkbox" name="features" value="Performance"> Performance</label>
-            <label><input type="checkbox" name="features" value="Design"> Design</label>
+            <label for="durability">
+                <input type="checkbox" id="durability" name="features" value="Durability"> Durability
+            </label>
+            <label for="ease">
+                <input type="checkbox" id="ease" name="features" value="Ease of Use"> Ease of Use
+            </label>
+            <label for="performance">
+                <input type="checkbox" id="performance" name="features" value="Performance"> Performance
+            </label>
+            <label for="design">
+                <input type="checkbox" id="design" name="features" value="Design"> Design
+            </label>
         </fieldset>
 
         <!-- REVIEW -->
         <label for="review">Written Review (Optional)</label>
-        <textarea id="review" name="review"></textarea>
+        <textarea id="review" name="review" placeholder="Share your experience with this product..."></textarea>
 
         <!-- NAME -->
         <label for="username">Your Name (Optional)</label>
-        <input type="text" id="username" name="username">
+        <input type="text" id="username" name="username" placeholder="Enter your name">
 
         <!-- SUBMIT -->
         <input type="submit" value="Post Review">
-
     </form>
 </main>
 
@@ -71,6 +88,5 @@
     <p>© <span id="year"></span> 💮 David Onochie Izuogu 💮 Nigeria</p>
     <p id="lastModified"></p>
 </footer>
-
 </body>
 </html>
